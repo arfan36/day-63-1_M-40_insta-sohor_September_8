@@ -157,7 +157,8 @@ const displayLikedPosts = () => {
 
 const displayReportedPosts = () => {
   const reportedPosts = getReportedPosts();
-  // cleared previously blocked linked post
+  //! debugger;
+  // cleared previous append Child (blocked linked post)
   document.getElementById("reported").textContent = '';
   reportedPosts.forEach((post) => {
     const div = createPost(post);
